@@ -1,5 +1,9 @@
 def single_number(nums)
-  nums.find {|num| nums.count(num) == 1}
+  hist = Hash.new(0)
+  nums.each do |num|
+    hist[num] += 1
+  end
+  hist.key(1)
 end
 
 test1 = [2, 2, 1]
