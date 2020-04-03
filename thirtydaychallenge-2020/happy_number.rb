@@ -11,7 +11,6 @@ def is_happy(num)
   false
 end
 
-puts "19 is #{is_happy(19) ? 'happy' : 'unhappy'}"
-puts "191 is #{is_happy(191) ? 'happy' : 'unhappy'}"
-puts "97 is #{is_happy(97) ? 'happy' : 'unhappy'}"
-puts "2534 is #{is_happy(2534) ? 'happy' : 'unhappy'}"
+[19, 191, 92, 2534].each do |num|
+  puts "#{num} is #{is_happy(num) ? '' : 'un'}happy"
+end
